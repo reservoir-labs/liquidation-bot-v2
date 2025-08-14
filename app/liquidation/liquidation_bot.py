@@ -95,6 +95,7 @@ class Vault:
                     True
                 ).call()
         except Exception as ex: # pylint: disable=broad-except
+
             if ex.args[0] != "0x43855d0f" and ex.args[0] != "0x6d588708":
                 logger.error("Vault: Failed to get account liquidity"
                             " for account %s: Contract error - %s",

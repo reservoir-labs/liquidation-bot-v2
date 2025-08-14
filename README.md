@@ -82,7 +82,7 @@ mkdir logs state
 
 **Run**:
 ```bash
-python flask run --port 8080
+flask run --port 8080
 ```
 Change the Port number to whatever port is desired for exposing the relevant endpoints from the [routes.py](app/liquidation/routes.py) file.
 
