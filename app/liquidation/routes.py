@@ -15,7 +15,6 @@ def start_monitor(chain_ids=None):
     if chain_ids is None:
         chain_ids = [43114]
 
-    print(chain_ids)
     chain_manager = ChainManager(chain_ids, notify=True)
 
     chain_manager.start()
