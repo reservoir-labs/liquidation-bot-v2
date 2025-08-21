@@ -900,8 +900,8 @@ class EVCListener:
                                 current_start, current_end)
 
                     logs = self.evc_instance.events.AccountStatusCheck().get_logs(
-                        fromBlock=current_start,
-                        toBlock=current_end)
+                        from_block=current_start,
+                        to_block=current_end)
 
                     for log in logs:
                         vault_address = log["args"]["controller"]
