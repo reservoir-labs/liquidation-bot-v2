@@ -13,14 +13,14 @@ contract DeployLiquidator is Script {
     function run() public {
         uint256 deployerPrivateKey = vm.envUint("LIQUIDATOR_PRIVATE_KEY");
 
-        address swapperAddress = 0x2Bba09866b6F1025258542478C39720A09B728bF;
-        address swapVerifierAddress = 0xae26485ACDDeFd486Fe9ad7C2b34169d360737c7;
-        address evcAddress = 0x0C9a3dd6b8F28529d72d7f9cE918D493519EE383;
+        address swapperAddress = 0x6E1C286e888Ab5911ca37aCeD81365d57eC29a06;
+        address swapVerifierAddress = 0x0d7938D9c31Cd7dD693752074284af133c1142de;
+        address evcAddress = 0xddcbe30A761Edd2e19bba930A977475265F36Fa1;
         address pyth = 0x4305FB66699C3B2702D4d05CF36551390A4c69C6;
 
         address deployer = vm.addr(deployerPrivateKey);
         vm.startBroadcast(deployerPrivateKey);
-        
+
         uint256 beforeGas = gasleft();
         console2.log("Gas before: ", beforeGas);
         console2.log("Gas price: ", tx.gasprice);

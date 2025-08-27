@@ -247,7 +247,7 @@ chains:
 
     # Deployed contract addresses
     contracts:
-      LIQUIDATOR_CONTRACT: "0xddcbe30A761Edd2e19bba930A977475265F36Fa1" # TODO: replace with real contract later
+      LIQUIDATOR_CONTRACT: "0x15E00D8841A38c6f7Fb6b0d40Dc8a683b66D3C7b"
 
       # EVK Addresses
       EVC: "0xddcbe30A761Edd2e19bba930A977475265F36Fa1"
